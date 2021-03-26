@@ -110,7 +110,7 @@ SELECT c.*
     VALUES
           (
            'LDSBC_IT243_xx'
-		 , 'C:\Users\z035330\Documents\JJAUSSI\Other\JC\projects\LDSBC\IT_243\repos\DFNB_src\txt_files\'
+		 , 'C:\repos\IT_243\DFNB_src\txt_files\'
          , '\Package.Variables[User::v_data_share_root].Properties[Value]'
          , 'String'
           );
@@ -136,17 +136,17 @@ SELECT c.*
     VALUES
           (
            'SSIS_PDS_Template_xx'
-		 , 'C:\Users\z035330\Documents\JJAUSSI\Other\JC\projects\LDSBC\IT_243\repos\DFNB_src\txt_files\'
+		 , 'C:\repos\IT_243\DFNB_src\txt_files\'
          , '\Package.Variables[User::v_data_share_root].Properties[Value]'
          , 'String'
           );
 
 
 
-    -- 3.2) LoadDFNB3_xx
+    -- 3.2) LoadDFNB3_cg
 
     DELETE FROM dbo.[SSIS Configurations]
-     WHERE ConfigurationFilter = 'LoadDFNB3_xx';
+     WHERE ConfigurationFilter = 'LoadDFNB3_cg';
 	
 
 	-- 3.1.1) v_data_share_root
@@ -157,8 +157,8 @@ SELECT c.*
                                         , ConfiguredValueType)
     VALUES
           (
-           'LoadDFNB3_xx'
-		 , 'C:\Users\z035330\Documents\JJAUSSI\Other\JC\projects\LDSBC\IT_243\repos\DFNB_src\txt_files\'
+           'LoadDFNB3_cg'
+		 , 'C:\repos\IT_243\DFNB_src\txt_files\'
          , '\Package.Variables[User::v_data_share_root].Properties[Value]'
          , 'String'
           );
