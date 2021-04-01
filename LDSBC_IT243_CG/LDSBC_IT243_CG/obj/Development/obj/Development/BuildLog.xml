@@ -2,13 +2,23 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>LDSBC_IT243_CG</Name>
-    <LastWriteTime>2021-03-20T00:05:17.1672804Z</LastWriteTime>
+    <LastWriteTime>2021-04-01T06:51:14.3562775Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>SSIS_PDS_Template_cg.dtsx</Name>
-      <LastWriteTime>2021-03-20T00:05:17.1549717Z</LastWriteTime>
+      <LastWriteTime>2021-03-26T08:25:00.0115482Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>LoadDFNB3.dtsx</Name>
+      <LastWriteTime>2021-04-01T06:32:15.3441909Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>LoadDFNB3 1.dtsx</Name>
+      <LastWriteTime>2021-04-01T07:08:57.2921144Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

@@ -24,6 +24,7 @@ MODIFICATION LOG:
 Ver      Date        Author           Description
 -------  ----------  ---------------  ------------------------------------------------------------------------
 1.0      11/03/2019  JJAUSSI          1. Created this process for LDS BC IT243
+1.1      03/26/2021  CGREEN           1. Added LoadDFNB3_cg configuration
 
 
 
@@ -98,7 +99,7 @@ SELECT c.*
 	-- 2.1) LDSBC_IT243_xx  
 	
 	DELETE FROM dbo.[SSIS Configurations]
-     WHERE ConfigurationFilter = 'LDSBC_IT243_xx';
+     WHERE ConfigurationFilter = 'LDSBC_IT243_cg';
 	
 
 	-- 2.1.1) v_data_share_root
@@ -109,7 +110,7 @@ SELECT c.*
                                         , ConfiguredValueType)
     VALUES
           (
-           'LDSBC_IT243_xx'
+           'LDSBC_IT243_cg'
 		 , 'C:\repos\IT_243\DFNB_src\txt_files\'
          , '\Package.Variables[User::v_data_share_root].Properties[Value]'
          , 'String'
@@ -124,7 +125,7 @@ SELECT c.*
     -- 3.1) SSIS_PDS_Template_xx
 
     DELETE FROM dbo.[SSIS Configurations]
-     WHERE ConfigurationFilter = 'SSIS_PDS_Template_xx';
+     WHERE ConfigurationFilter = 'SSIS_PDS_Template_cg';
 	
 
 	-- 3.1.1) v_data_share_root
@@ -135,7 +136,7 @@ SELECT c.*
                                         , ConfiguredValueType)
     VALUES
           (
-           'SSIS_PDS_Template_xx'
+           'SSIS_PDS_Template_cg'
 		 , 'C:\repos\IT_243\DFNB_src\txt_files\'
          , '\Package.Variables[User::v_data_share_root].Properties[Value]'
          , 'String'
@@ -149,7 +150,7 @@ SELECT c.*
      WHERE ConfigurationFilter = 'LoadDFNB3_cg';
 	
 
-	-- 3.1.1) v_data_share_root
+	-- 3.2.1) v_data_share_root
 
     INSERT INTO dbo.[SSIS Configurations](ConfigurationFilter
                                         , ConfiguredValue
